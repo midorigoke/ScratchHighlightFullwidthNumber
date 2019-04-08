@@ -1,0 +1,19 @@
+const target = document.querySelector('.blocklySvg');
+const regexp = /[０-９]/;
+
+const observer = new MutationObserver(records => {
+  document.querySelectorAll('*[data-argument-type~="text"] text, *[data-argument-type~="number"] text').forEach(e => {
+    if (regexp.test(e.textContent)){
+      e.style.fill = 'red';
+    } else {
+      e.style.fill = '';
+    }
+  });
+});
+
+observer.observe(target, {
+  attributes: true,
+  characterData: true,
+  childList: true,
+  subtree: true
+});

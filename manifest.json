@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Scratch Highlight Fullwidth Number",
+  "version": "2019.4.8.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://scratch.mit.edu/projects*/editor*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
