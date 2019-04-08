@@ -1,4 +1,4 @@
-const target = document.querySelector('.blocklySvg');
+const target = document.querySelectorAll('.blocklyBlockCanvas');
 const regexp = /[０-９]/;
 
 const observer = new MutationObserver(records => {
@@ -11,9 +11,11 @@ const observer = new MutationObserver(records => {
   });
 });
 
-observer.observe(target, {
-  attributes: true,
-  characterData: true,
-  childList: true,
-  subtree: true
+target.forEach(e => {
+  observer.observe(e, {
+    attributes: true,
+    characterData: true,
+    childList: true,
+    subtree: true
+  });
 });
