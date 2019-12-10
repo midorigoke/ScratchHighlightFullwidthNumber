@@ -1,7 +1,12 @@
 {
   "manifest_version": 2,
   "name": "Scratch Highlight Fullwidth Number",
-  "version": "2019.4.8.1",
+  "version": "2019.12.10.1",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
   "content_scripts": [
     {
       "matches": [
