@@ -8,6 +8,13 @@
 
 ## Installation
 
+### Chromeウェブストアから (推奨)
+
+1. [ストアページ](https://chrome.google.com/webstore/detail/scratch-highlight-fullwid/flilpaighgnpompadbglofgepkodjdea)を開き、「Chromeに追加」を押す
+2. 確認画面が出るので「拡張機能を追加」を押す
+
+### このリポジトリから
+
 1. cloneもしくはダウンロードして展開
 1. Chromeの拡張機能設定(chrome://extensions/)から「パッケージ化されていない拡張機能を読み込む」から追加する
 
